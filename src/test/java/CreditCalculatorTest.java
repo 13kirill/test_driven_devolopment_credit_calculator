@@ -34,13 +34,13 @@ public class CreditCalculatorTest {
         double percent = 8.2;
         double credit = 3_411_300;
         int months = 360;
-        double expexted = 25_508.15;
+        double expected = 25_508.15;
 
         //act
         double result = sut.monthlyPayment(credit, percent, months);
 
         //assert
-        assertEquals(expexted, result);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -49,13 +49,13 @@ public class CreditCalculatorTest {
         double percent = 8.2;
         double credit = 3_411_300;
         int months = 360;
-        double expexted = 9182934.0;
+        double expected = 9182934.0;
 
         //act
         double result = sut.returnedBalance(credit, percent, months);
 
         //assert
-        assertEquals(expexted, result);
+        assertEquals(expected, result);
     }
 
     @Test
@@ -64,12 +64,12 @@ public class CreditCalculatorTest {
         double percent = 8.2;
         double credit = 3_411_300;
         int months = 360;
-        double expexted = 5771634.0;
+        double expected = 5771634.0;
 
         //act
         double result = sut.overpayment(credit, percent, months);
 
         //assert
-        assertEquals(expexted, result);
+        assertEquals(expected, result);
     }
 }
